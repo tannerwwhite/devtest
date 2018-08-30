@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <script src="logic.js"></script>
 </head>
 
@@ -32,18 +33,18 @@
 
         <div class="hero-image">
             <div class="hero-text">
-                <h1>A>M> Paradox</h1>
+                <h1>A.M. Paradox</h1>
                 <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz,
-                    is an American singer and record producer. He released his debut project,
-                    and extended play entitled A.M. Paradox, in 2016</p>
-                <button>Watch Video</button>
+                    is<br> an American singer and record producer. He released his debut project,
+                    an<br> extended play entitled A.M. Paradox, in 2016</p>
+                <button id="watch_button">Watch Video</button>
             </div>
         </div>
 
         <section>
-            <div class="ibabout">
+            <div id="ibabout">
                 <p><img id="aboutimg" src="assets/image2.png" alt="Picture" class="fleft">
-                    <h2 id="abouthead">Brent Faiyaz, So Far Gone</h2>
+                    <h1 id="abouthead">Brent Faiyaz, So<br> Far Gone</h1>
                     <p id="aboutbody">Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his
                         hometown Columbia, Maryland to Charlotte, North Carolina before ultimately
                         settling in Los Angeles, California to further his music career. On January 19, 2015, he released his debut single "Allure".[4] On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released and received with positive reviews from music critics. On January 26, 2017, Sonder released their debut EP Into.
@@ -69,20 +70,21 @@
 
         <section>
             <div id="cform">
-                <div id="contact-container" class="fleft">
+                <div id="contact-container" id="fleft">
                     <form id="contact" action="" method="post">
-                        <h3 id="contactheader">Get In Touch</h3>
-                        <h4 id="contact">New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify</h4>
-                        <fieldset>
+                        <h1 id="contactheader">Get In Touch</h1>
+                        <h4 id="contact">New albums every single month, check out the newest &<br> best from Snyder Recording artist, now available on Apple<br> Music & Spotify</h4>
+                        <fieldset id="contact_row_one">
                             <input placeholder="First Name" type="text" tabindex="1" required autofocus>
                         </fieldset>
-                        <fieldset>
+                        <fieldset id="contact_row_one">
                             <input placeholder="Last Name" type="email" tabindex="2" required>
                         </fieldset>
-                        <fieldset>
+                        <div style="clear:both;"></div>
+                        <fieldset id="contact_row two">
                             <input placeholder="Email Address" type="tel" tabindex="3" required>
                         </fieldset>
-                        <fieldset>
+                        <fieldset id="contact_row two">
                             <input placeholder="Reason For Contacting" type="url" tabindex="4" required>
                         </fieldset>
                         <fieldset>
@@ -104,73 +106,82 @@
         <div style="clear:both;"></div>
 
 
-<div class="wrapper">		
-<section class="columns">
-	
-	<div class="column">
-                <img id="footer_logo" src="assets/SRrecordings.svg">
-	</div>
-	
-	<div class="column">
-		<h2>Explore</h2>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-	</div>
-  
-  <div class="column">
-		<h2>Music</h2>
-                <ul>
-                    <li><a href="#">Missing Out</a></li>
-                    <li><a href="#">Trap Soul</a></li>
-                    <li><a href="#">Sonder Sons</a></li>
-                    <li><a href="#">Paradise Today</a></li>
-                    <li><a href="#">Needed</a></li>
-                </ul>
-	</div>
-      <div class="column">
-		<h2>Artists</h2>
-                <ul>
-                    <li><a href="#">Brent Faiyaz</a></li>
-                    <li><a href="#">Drake</a></li>
-                    <li><a href="#">Bryson Tiller</a></li>
-                    <li><a href="#">Young Ford</a></li>
-                    <li><a href="#">Rory Fresco</a></li>
-                </ul>
-	</div>
-      <div class="column">
-		<h2>Records</h2>
-                <ul>
-                    <li><a href="#">What a Time</a></li>
-                    <li><a href="#">Coming Home</a></li>
-                    <li><a href="#">Always First</a></li>
-                    <li><a href="#">So Far Gone</a></li>
-                    <li><a href="#">Big Bluez</a></li>
-                </ul>
-	</div>
-      <div class="column">
-		<h2>Concerts</h2>
-                <ul>
-                    <li><a href="#">Midland Live</a></li>
-                    <li><a href="#">Granada 2018</a></li>
-                    <li><a href="#">Tiller Unplugged</a></li>
-                    <li><a href="#">Love Live</a></li>
-                    <li><a href="#">XX Live Mix</a></li>
-                </ul>
-	</div>
-	
-</section>	
-	
-	<footer>
-		<h3>Footer</h3>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro. Doloribus vitae non dolores modi dolorum commodi perspiciatis dicta nostrum minus esse, totam officia, quibusdam amet quas tempora? Voluptatibus, esse.</p>
-	</footer>
+        <div class="wrapper">
+            <section class="columns">
 
-</div>
+                <div class="column">
+                    <img id="footer_logo" src="assets/SRrecordings.svg">
+                </div>
+
+                <div class="column">
+                    <h2 id="foot_header">Explore</h2>
+                    <ul>
+                        <li><a href="#" style="color:white;">About Us</a></li>
+                        <li><a href="#" style="color:white;">Our Story</a></li>
+                        <li><a href="#" style="color:white;">Team</a></li>
+                        <li><a href="#" style="color:white;">Careers</a></li>
+                        <li><a href="#" style="color:white;">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2 id="foot_header">Music</h2>
+                    <ul>
+                        <li><a href="#" style="color:white;">Missing Out</a></li>
+                        <li><a href="#" style="color:white;">Trap Soul</a></li>
+                        <li><a href="#" style="color:white;">Sonder Sons</a></li>
+                        <li><a href="#" style="color:white;">Paradise Today</a></li>
+                        <li><a href="#" style="color:white;">Needed</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2 id="foot_header">Artists</h2>
+                    <ul>
+                        <li><a href="#" style="color:white;">Brent Faiyaz</a></li>
+                        <li><a href="#" style="color:white;">Drake</a></li>
+                        <li><a href="#" style="color:white;">Bryson Tiller</a></li>
+                        <li><a href="#" style="color:white;">Young Ford</a></li>
+                        <li><a href="#" style="color:white;">Rory Fresco</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2 id="foot_header">Records</h2>
+                    <ul>
+                        <li><a href="#" style="color:white;">What a Time</a></li>
+                        <li><a href="#" style="color:white;">Coming Home</a></li>
+                        <li><a href="#" style="color:white;">Always First</a></li>
+                        <li><a href="#" style="color:white;">So Far Gone</a></li>
+                        <li><a href="#" style="color:white;">Big Bluez</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2 id="foot_header">Concerts</h2>
+                    <ul>
+                        <li><a href="#" style="color:white;">Midland Live</a></li>
+                        <li><a href="#" style="color:white;">Granada 2018</a></li>
+                        <li><a href="#" style="color:white;">Tiller Unplugged</a></li>
+                        <li><a href="#" style="color:white;">Love Live</a></li>
+                        <li><a href="#" style="color:white;">XX Live Mix</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <footer class="wrapper">
+                <div>
+
+                </div>
+                <div id="social">
+                    <ul>
+                        <li><img src="assets/icons/Youtube.png"><a href="#"></a></li>
+                        <li><img src="assets/icons/Twitter.png"><a href="#"></a></li>
+                        <li><img src="assets/icons/Instagram.png"><a href="#"></a></li>
+                        <li><img src="assets/icons/Snapchaat.png"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
 
     </div>
 
@@ -183,7 +194,6 @@
         $(document).ready(function() {
             $('.your-class').slick({});
         });
-
     </script>
 </body>
 

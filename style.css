@@ -1,40 +1,47 @@
-html{
+html {
     background: black;
 }
-.content{
+
+.content {
     background-color: white;
     max-width: 1280px;
     margin: auto;
 }
-nav ul{
+
+nav ul {
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     /* This allow us to arrange list items in a row, without using float */
     background: white;
     display: inline-block;
     list-style-type: none;
+    padding-left:100
 }
 
 /* Create a style for the first level items */
 body {
-  background: black;
+    background: black;
+    font-family: 'Karla', sans-serif;
+
 }
 
 #logo {
-  height: 34px;
-    width:93px;
-  vertical-align: middle;
+    height: 34px;
+    width: 93px;
+    vertical-align: middle;
 }
 
 li:hover {
-  background: #fff;
+    background: #fff;
 }
+
 nav > ul > li > a {
     background: white;
     color: #aaa;
-    background-color:white;
+    background-color: white;
     display: inline-block;
     line-height: 2em;
     padding: 0.5em 0.5em;
@@ -44,7 +51,8 @@ nav > ul > li > a {
 
 
 
-body, html {
+body,
+html {
     height: 100%;
 }
 
@@ -66,126 +74,188 @@ body, html {
 /* Place text in the middle of the image */
 .hero-text {
     text-align: left;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #EEF1F5;
+    padding-left: 40px;
 }
 
 /*Hero image zoom */
-.hero-image{
-    -webkit-animation:zoom 5s infinite;
-    animation:zoom 5s infinite;
-    background:url("assets/heroimg.png") center center fixed no-repeat;
+.hero-image {
+    -webkit-animation: zoom 10s infinite;
+    animation: zoom 10s infinite;
+    background: url("assets/heroimg.png") center center fixed no-repeat;
 }
-@-webkit-keyframes zoom{
-    0%,100%{
-        background-size:100%;
-    }
-    50%{
-        background-size:125%;
-    }
+.watch_button{
+    background-color: none;
 }
-@keyframes zoom{
-    0%, 100%{
-        background-size:100%;
+
+@-webkit-keyframes zoom {
+
+    0%,
+    100% {
+        background-size: 100%;
     }
-    50%{
-        background-size:125%;
+
+    50% {
+        background-size: 125%;
     }
 }
 
-#aboutimg{
-padding-top: 100px;
+@keyframes zoom {
+
+    0%,
+    100% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 125%;
+    }
+}
+
+#aboutimg {
+    padding-top: 100px;
     padding-left: 75px;
     padding-right: 35px;
     padding-bottom: 125px;
 }
 
-#abouthead{
+#abouthead {
     padding-right: 321px;
-        padding-top:100px;
-    
+    padding-top: 100px;
+    color:#001D5D;
+    font-size: 40px
+
 }
 
-#aboutbody{
+#aboutbody {
     padding-right: 170px;
 }
 
-.fleft{
+.fleft {
+    float: left;
+}
+#contact{
+
+    padding-left: 75px; 
+    color:#747474;
+}
+#contactheader{
+ padding-top: 90px;
+    padding-left: 75px;
+    color: #001D5D;
+
+}
+#cform{
+    width:750px;
+    float:left
+}
+#cformimg {
+    height: 720px;
+    width: 530px;
+    float: right
+}
+
+#contact_row_one{
     float: left;
 }
 
 
-#cformimg{
-    height: 720px;
+.wrapper {
+    padding: 0px;
+    max-width: 100%;
+    width: 100%;
+    margin:  auto;
 }
 
-.wrapper {
-	padding: 0px;
-	max-width: 100%;
-	width: 100%;
-	margin: 20px auto;
-}
 #foot_header {
     text-align: center;
-	padding:;
+    padding: ;
 }
 
 .columns {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 5px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: px 0;
     background: #001D5D;
-    color:white;
+    color: white;
 }
 
-#fcolor{
-    color:white;
+#fcolor {
+    color: white;
 }
-.coiumn a{
-    color:white;
+
+
+.coiumn a {
+    color: white;
 }
+
 .column {
-	flex: 1;
-	
-	margin: 2px;
-	padding: 10px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
+    flex: 1;
+
+    margin: 2px;
+    padding: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
     color:white;
-	
+
 }
 
 footer {
-	padding: 0 15px;
+
 }
 
-#footer_logo{
-    width:75px;
+#footer_logo {
+    width: 75px;
     height: 75px;
+}
+
+#pp{
+
+}
+#social_bar{
+    width
+}
+#social{
+    background:blue;
+    width:100%
 }
 
 
 @media screen and (max-width: 980px) {
-  .columns .column {
-		margin-bottom: 5px;
-    flex-basis: 40%;
-		&:nth-last-child(2) {
-			margin-right: 0;
-		}
-		&:last-child {
-			flex-basis: 100%;
-			margin: 0;
-		}
-	}
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+
+        &:nth-last-child(2) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            flex-basis: 100%;
+            margin: 0;
+        }
+    }
+* {
+margin: 0;
+padding: 0;
+}
 }
 
 @media screen and (max-width: 680px) {
-	.columns .column {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-	}
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
 }
