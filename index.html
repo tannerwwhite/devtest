@@ -43,7 +43,7 @@
 
         <section>
             <div id="ibabout">
-                <p><img id="aboutimg" src="assets/image2.png" alt="Picture" class="fleft">
+                <p><img id="aboutimg" src="assets/image2.png" alt="Picture">
                     <h1 id="abouthead">Brent Faiyaz, So<br> Far Gone</h1>
                     <p id="aboutbody">Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his
                         hometown Columbia, Maryland to Charlotte, North Carolina before ultimately
@@ -56,7 +56,15 @@
         <div style="clear:both;"></div>
 
         <section>
-            <div class="your-class">
+            <div class="carousel">
+                <div id ="carousel_slide">
+                    <p><img id ="carousel_img" src="assets/albumimg.png" alt="Album Cover"></p>
+                    <h3 id="carousel_head"> Trap Soul</h3>
+                    <p id="carousel_about">Bryson Djuan Tiller, is an American singer,<br> songwriter and rapper.  Born in Louisville,<br> Kentucky, he started his career in 2011,<br> releasing the debut mixtap titled Killer<br> Instinct Vol.1.</p>
+
+                </div>
+
+                <div><img src="assets/albumimg.png"></div>
                 <div><img src="assets/albumimg.png"></div>
                 <div><img src="assets/albumimg.png"></div>
                 <div><img src="assets/albumimg.png"></div>
@@ -69,33 +77,50 @@
 
 
         <section>
-            <div id="cform">
-                <div id="contact-container" id="fleft">
-                    <form id="contact" action="" method="post">
-                        <h1 id="contactheader">Get In Touch</h1>
-                        <h4 id="contact">New albums every single month, check out the newest &<br> best from Snyder Recording artist, now available on Apple<br> Music & Spotify</h4>
-                        <fieldset id="contact_row_one">
-                            <input placeholder="First Name" type="text" tabindex="1" required autofocus>
-                        </fieldset>
-                        <fieldset id="contact_row_one">
-                            <input placeholder="Last Name" type="email" tabindex="2" required>
-                        </fieldset>
-                        <div style="clear:both;"></div>
-                        <fieldset id="contact_row two">
-                            <input placeholder="Email Address" type="tel" tabindex="3" required>
-                        </fieldset>
-                        <fieldset id="contact_row two">
-                            <input placeholder="Reason For Contacting" type="url" tabindex="4" required>
-                        </fieldset>
-                        <fieldset>
-                            <textarea placeholder="Write a brief message..." tabindex="5" required></textarea>
-                        </fieldset>
-                        <fieldset>
-                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
-                        </fieldset>
+            <div class="bg_img"></div>
+            <div class="form_wrapper">
+                <div class="form_container">
+                    <div class="title_container">
+                        <h2>Get In Touch</h2>
+                        <h3>New albums every single month, check out the newest & best from Snyder Recording artist on Apple Music & Spotify.</h3>
+                    </div>
+                    <form>
+                        <div class="row clearfix">
+                            <div class="col_half">
+
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" name="first_name" placeholder="First Name" required />
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" name="last_name" placeholder="Last Name" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col_half">
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                                    <input type="email" name="email" placeholder="Email Address" required />
+                                </div>
+                            </div>
+                            <div class="col_half">
+
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                                    <input type="dropdown" name="reason" placeholder="Reason For Contacting" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div>
+                                <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+                                    <textarea cols="46" rows="3" name="comments" placeholder="Write a brief message..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="button" type="submit" value="Sumbit" />
                     </form>
                 </div>
-
             </div>
 
             <div>
@@ -192,7 +217,10 @@
 
     <script>
         $(document).ready(function() {
-            $('.your-class').slick({});
+            $('.carousel').slick({
+                centerMode: true,
+                slidesToShow: 1
+            });
         });
     </script>
 </body>
