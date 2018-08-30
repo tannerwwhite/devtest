@@ -1,5 +1,5 @@
 html{
-    background-color: black;
+    background: black;
 }
 .content{
     background-color: white;
@@ -19,7 +19,7 @@ nav ul li {
 
 /* Create a style for the first level items */
 body {
-  background: white;
+  background: black;
 }
 
 #logo {
